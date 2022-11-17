@@ -31,7 +31,7 @@ public class UsrApiInterceptor implements HandlerInterceptor {
         response.setHeader("Access-Control-Allow-Origin", "*");
         HandlerMethod handlerMethod = (HandlerMethod) handler;
         if (!(handler instanceof HandlerMethod)) {
-            response.setStatus(HttpServletResponse.);
+//            response.setStatus(HttpServletResponse.);
             return false;
         }
         UserAuthentication requireAuth = handlerMethod.getMethodAnnotation(UserAuthentication.class);
